@@ -134,5 +134,7 @@ namespace SomerenUI
         {
             ShowRoomsPanel();
         }
+
+       
     }
 }
