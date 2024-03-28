@@ -1,0 +1,51 @@
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\bin\Debug\net6.0\SomerenService.deps.json
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\bin\Debug\net6.0\SomerenService.dll
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\bin\Debug\net6.0\SomerenService.pdb
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\bin\Debug\net6.0\SomerenDAL.dll
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\bin\Debug\net6.0\SomerenModel.dll
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\bin\Debug\net6.0\SomerenDAL.pdb
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\bin\Debug\net6.0\SomerenModel.pdb
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\obj\Debug\net6.0\SomerenService.csproj.AssemblyReference.cache
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\obj\Debug\net6.0\SomerenService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\obj\Debug\net6.0\SomerenService.AssemblyInfoInputs.cache
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\obj\Debug\net6.0\SomerenService.AssemblyInfo.cs
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\obj\Debug\net6.0\SomerenService.csproj.CoreCompileInputs.cache
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\obj\Debug\net6.0\SomerenService.csproj.CopyComplete
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\obj\Debug\net6.0\SomerenService.dll
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\obj\Debug\net6.0\refint\SomerenService.dll
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\obj\Debug\net6.0\SomerenService.pdb
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenService\obj\Debug\net6.0\ref\SomerenService.dll
+T:\University inholland\Github workshop\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenService.deps.json
+T:\University inholland\Github workshop\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenService.dll
+T:\University inholland\Github workshop\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenService.pdb
+T:\University inholland\Github workshop\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenDAL.dll
+T:\University inholland\Github workshop\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenModel.dll
+T:\University inholland\Github workshop\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenDAL.pdb
+T:\University inholland\Github workshop\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenModel.pdb
+T:\University inholland\Github workshop\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.csproj.AssemblyReference.cache
+T:\University inholland\Github workshop\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.GeneratedMSBuildEditorConfig.editorconfig
+T:\University inholland\Github workshop\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.AssemblyInfoInputs.cache
+T:\University inholland\Github workshop\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.AssemblyInfo.cs
+T:\University inholland\Github workshop\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.csproj.CoreCompileInputs.cache
+T:\University inholland\Github workshop\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.csproj.CopyComplete
+T:\University inholland\Github workshop\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.dll
+T:\University inholland\Github workshop\SomerenProject\SomerenService\obj\Debug\net6.0\refint\SomerenService.dll
+T:\University inholland\Github workshop\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.pdb
+T:\University inholland\Github workshop\SomerenProject\SomerenService\obj\Debug\net6.0\ref\SomerenService.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenService.deps.json
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenService.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenService.pdb
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenDAL.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenModel.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenDAL.pdb
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\bin\Debug\net6.0\SomerenModel.pdb
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.csproj.AssemblyReference.cache
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.GeneratedMSBuildEditorConfig.editorconfig
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.AssemblyInfoInputs.cache
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.AssemblyInfo.cs
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.csproj.CoreCompileInputs.cache
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.csproj.CopyComplete
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\obj\Debug\net6.0\refint\SomerenService.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\obj\Debug\net6.0\SomerenService.pdb
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenService\obj\Debug\net6.0\ref\SomerenService.dll

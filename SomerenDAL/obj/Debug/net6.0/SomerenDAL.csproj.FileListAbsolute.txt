@@ -1,0 +1,45 @@
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\bin\Debug\net6.0\SomerenDAL.deps.json
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\bin\Debug\net6.0\SomerenDAL.dll
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\bin\Debug\net6.0\SomerenDAL.pdb
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.AssemblyReference.cache
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\obj\Debug\net6.0\SomerenDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\obj\Debug\net6.0\SomerenDAL.AssemblyInfoInputs.cache
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\obj\Debug\net6.0\SomerenDAL.AssemblyInfo.cs
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.CoreCompileInputs.cache
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\obj\Debug\net6.0\SomerenDAL.dll
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\obj\Debug\net6.0\refint\SomerenDAL.dll
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\obj\Debug\net6.0\SomerenDAL.pdb
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\obj\Debug\net6.0\ref\SomerenDAL.dll
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\bin\Debug\net6.0\SomerenModel.dll
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\bin\Debug\net6.0\SomerenModel.pdb
+C:\Users\gerwin.vandijken\source\repos\Someren\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.CopyComplete
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\bin\Debug\net6.0\SomerenDAL.deps.json
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\bin\Debug\net6.0\SomerenDAL.dll
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\bin\Debug\net6.0\SomerenDAL.pdb
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\bin\Debug\net6.0\SomerenModel.dll
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\bin\Debug\net6.0\SomerenModel.pdb
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.AssemblyReference.cache
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.GeneratedMSBuildEditorConfig.editorconfig
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.AssemblyInfoInputs.cache
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.AssemblyInfo.cs
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.CoreCompileInputs.cache
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.CopyComplete
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.dll
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\obj\Debug\net6.0\refint\SomerenDAL.dll
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.pdb
+T:\University inholland\Github workshop\SomerenProject\SomerenDAL\obj\Debug\net6.0\ref\SomerenDAL.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\bin\Debug\net6.0\SomerenDAL.deps.json
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\bin\Debug\net6.0\SomerenDAL.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\bin\Debug\net6.0\SomerenDAL.pdb
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\bin\Debug\net6.0\SomerenModel.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\bin\Debug\net6.0\SomerenModel.pdb
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.AssemblyReference.cache
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.GeneratedMSBuildEditorConfig.editorconfig
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.AssemblyInfoInputs.cache
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.AssemblyInfo.cs
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.CoreCompileInputs.cache
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.CopyComplete
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\obj\Debug\net6.0\refint\SomerenDAL.dll
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\obj\Debug\net6.0\SomerenDAL.pdb
+T:\University inholland\Github workshop\Assignment 2 - Group 6\SomerenProject\SomerenDAL\obj\Debug\net6.0\ref\SomerenDAL.dll
