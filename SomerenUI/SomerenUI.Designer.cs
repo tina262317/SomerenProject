@@ -81,14 +81,14 @@
             // dashboardToolStripMenuItem1
             // 
             dashboardToolStripMenuItem1.Name = "dashboardToolStripMenuItem1";
-            dashboardToolStripMenuItem1.Size = new System.Drawing.Size(232, 40);
+            dashboardToolStripMenuItem1.Size = new System.Drawing.Size(315, 40);
             dashboardToolStripMenuItem1.Text = "Dashboard";
             dashboardToolStripMenuItem1.Click += dashboardToolStripMenuItem1_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new System.Drawing.Size(232, 40);
+            exitToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -121,6 +121,7 @@
             // pnlDashboard
             // 
             pnlDashboard.Controls.Add(lblDashboard);
+            pnlDashboard.Controls.Add(pnlStudents);
             pnlDashboard.Location = new System.Drawing.Point(21, 54);
             pnlDashboard.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             pnlDashboard.Name = "pnlDashboard";
@@ -142,7 +143,7 @@
             pnlStudents.Controls.Add(pictureBox1);
             pnlStudents.Controls.Add(listViewStudents);
             pnlStudents.Controls.Add(label1);
-            pnlStudents.Location = new System.Drawing.Point(21, 54);
+            pnlStudents.Location = new System.Drawing.Point(0, 0);
             pnlStudents.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             pnlStudents.Name = "pnlStudents";
             pnlStudents.Size = new System.Drawing.Size(1608, 932);
@@ -236,8 +237,8 @@
             // type
             // 
             type.Text = "Type";
-            type.Width = 100;
             type.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            type.Width = 100;
             // 
             // label2
             // 
@@ -256,7 +257,6 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1649, 1010);
             Controls.Add(menuStrip1);
-            Controls.Add(pnlStudents);
             Controls.Add(pnlDashboard);
             Controls.Add(pnlRooms);
             MainMenuStrip = menuStrip1;

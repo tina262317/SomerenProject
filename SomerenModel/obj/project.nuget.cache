@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eBc/e7NZ0dXfPMphOo963ti38rpGXb2kiKNH2w+tC4yMQvNLkMm+xUvjlsKcdzch+StOkZ5pF+9FRq3YD7DJWQ==",
+  "dgSpecHash": "+mcBZDGI191BEfTfKRBNZcUCoac0KOyhApFasUifh0zyShNL7S17x6iE1M2WXd+tugcR5W5Pj00xPjmeEa1ADA==",
   "success": true,
-  "projectFilePath": "T:\\University inholland\\Github workshop\\Assignment 2 - Group 6\\SomerenProject\\SomerenModel\\SomerenModel.csproj",
+  "projectFilePath": "T:\\University inholland\\Github workshop\\SomerenProject\\SomerenModel\\SomerenModel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AsusIran\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
     "C:\\Users\\AsusIran\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
