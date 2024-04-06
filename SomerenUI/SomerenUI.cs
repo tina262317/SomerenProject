@@ -104,12 +104,11 @@ namespace SomerenUI
 
             foreach (Room room in rooms)
             {
-                string type = room.Type ? "Lecturer" : "Student";
-                ListViewItem li = new ListViewItem(Convert.ToString(room.Number));
-                li.SubItems.Add(room.Building.ToString());
-                li.SubItems.Add(room.Floor.ToString());
-                li.SubItems.Add(room.NumberOfBeds.ToString());
-                li.SubItems.Add(type);
+                string typeOutput = room.Type ? "Lecturer" : "Student";
+
+                ListViewItem li = new ListViewItem(room.Number);
+                li.SubItems.Add(room.Size.ToString());
+                li.SubItems.Add(typeOutput);
                 li.Tag = room;   // link room object to listview item
                 listViewRooms.Items.Add(li);
             }
@@ -135,6 +134,6 @@ namespace SomerenUI
             ShowRoomsPanel();
         }
 
-       
+        
     }
 }
