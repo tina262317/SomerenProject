@@ -47,9 +47,7 @@
             pictureBox2 = new System.Windows.Forms.PictureBox();
             listViewRooms = new System.Windows.Forms.ListView();
             roomNumber = new System.Windows.Forms.ColumnHeader();
-            building = new System.Windows.Forms.ColumnHeader();
-            floor = new System.Windows.Forms.ColumnHeader();
-            numberOfBeds = new System.Windows.Forms.ColumnHeader();
+            size = new System.Windows.Forms.ColumnHeader();
             type = new System.Windows.Forms.ColumnHeader();
             label2 = new System.Windows.Forms.Label();
             menuStrip1.SuspendLayout();
@@ -81,14 +79,14 @@
             // dashboardToolStripMenuItem1
             // 
             dashboardToolStripMenuItem1.Name = "dashboardToolStripMenuItem1";
-            dashboardToolStripMenuItem1.Size = new System.Drawing.Size(315, 40);
+            dashboardToolStripMenuItem1.Size = new System.Drawing.Size(232, 40);
             dashboardToolStripMenuItem1.Text = "Dashboard";
             dashboardToolStripMenuItem1.Click += dashboardToolStripMenuItem1_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            exitToolStripMenuItem.Size = new System.Drawing.Size(232, 40);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -202,7 +200,7 @@
             // 
             // listViewRooms
             // 
-            listViewRooms.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { roomNumber, building, floor, numberOfBeds, type });
+            listViewRooms.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { roomNumber, size, type });
             listViewRooms.Location = new System.Drawing.Point(27, 84);
             listViewRooms.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             listViewRooms.Name = "listViewRooms";
@@ -216,23 +214,10 @@
             roomNumber.Text = "Room Number";
             roomNumber.Width = 150;
             // 
-            // building
+            // size
             // 
-            building.Text = "Building";
-            building.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            building.Width = 120;
-            // 
-            // floor
-            // 
-            floor.Text = "Floor";
-            floor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            floor.Width = 100;
-            // 
-            // numberOfBeds
-            // 
-            numberOfBeds.Text = "Number of Beds";
-            numberOfBeds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            numberOfBeds.Width = 200;
+            size.Text = "Size";
+            size.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // type
             // 
@@ -298,9 +283,7 @@
         private System.Windows.Forms.ListView listViewRooms;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ColumnHeader roomNumber;
-        private System.Windows.Forms.ColumnHeader building;
-        private System.Windows.Forms.ColumnHeader floor;
-        private System.Windows.Forms.ColumnHeader numberOfBeds;
         private System.Windows.Forms.ColumnHeader type;
+        private System.Windows.Forms.ColumnHeader size;
     }
 }
