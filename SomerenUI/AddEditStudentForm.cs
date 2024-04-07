@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -83,7 +84,11 @@ namespace SomerenUI
             }
             catch (Exception exception)
             {
-                MessageBox.Show(exception.Message);
+                // create a new error message that checks if the exception thrown is an sql exception or not
+                // since the only sql exception that could be thrown here is the primary key error then it will show the message
+                // if not, it will show the default message
+                string errorMessage = exception is SqlException ? "This student already exists." : exception.Message;
+                MessageBox.Show(errorMessage);
             }
         }
 
