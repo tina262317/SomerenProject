@@ -48,7 +48,11 @@
             pictureBox2 = new System.Windows.Forms.PictureBox();
             listViewRooms = new System.Windows.Forms.ListView();
             roomNumber = new System.Windows.Forms.ColumnHeader();
+<<<<<<< HEAD
             numberOfBeds = new System.Windows.Forms.ColumnHeader();
+=======
+            size = new System.Windows.Forms.ColumnHeader();
+>>>>>>> 9a18ff8c73e5336a830bb97c71d4a4aac82dfa3d
             type = new System.Windows.Forms.ColumnHeader();
             label2 = new System.Windows.Forms.Label();
             pnlDrinks = new System.Windows.Forms.Panel();
@@ -221,7 +225,11 @@
             // 
             // listViewRooms
             // 
+<<<<<<< HEAD
             listViewRooms.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { roomNumber, numberOfBeds, type });
+=======
+            listViewRooms.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { roomNumber, size, type });
+>>>>>>> 9a18ff8c73e5336a830bb97c71d4a4aac82dfa3d
             listViewRooms.Location = new System.Drawing.Point(27, 84);
             listViewRooms.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             listViewRooms.Name = "listViewRooms";
@@ -235,11 +243,18 @@
             roomNumber.Text = "Room Number";
             roomNumber.Width = 150;
             // 
+<<<<<<< HEAD
             // numberOfBeds
             // 
             numberOfBeds.Text = "Number of Beds";
             numberOfBeds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             numberOfBeds.Width = 180;
+=======
+            // size
+            // 
+            size.Text = "Size";
+            size.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+>>>>>>> 9a18ff8c73e5336a830bb97c71d4a4aac82dfa3d
             // 
             // type
             // 
@@ -415,6 +430,7 @@
         private System.Windows.Forms.ListView listViewRooms;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ColumnHeader roomNumber;
+<<<<<<< HEAD
         private System.Windows.Forms.ColumnHeader numberOfBeds;
         private System.Windows.Forms.ColumnHeader type;
         private System.Windows.Forms.ToolStripMenuItem DrinksMenuItem;
@@ -431,5 +447,9 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.ColumnHeader stockAmount;
+=======
+        private System.Windows.Forms.ColumnHeader type;
+        private System.Windows.Forms.ColumnHeader size;
+>>>>>>> 9a18ff8c73e5336a830bb97c71d4a4aac82dfa3d
     }
 }

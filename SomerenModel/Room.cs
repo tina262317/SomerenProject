@@ -6,6 +6,6 @@
 
         public int NumberOfBeds { get; set; }      // numberOfBeds, could be either 8 or 1
 
-        public bool Type { get; set; } // Type of room, could be either lecturer or student
+        public bool Type { get; set; } // Type, could be either lecturer or student
     }
 }
