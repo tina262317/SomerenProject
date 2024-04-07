@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace SomerenModel
 {
-    // an enum for the stock status because it's fancy- I mean more efficient and organised
+    // an enum for the stock status because it's more efficient and organised
     public enum StockStatus
     {
-        // when it's empty inside... the stocks not you
+        // when it's empty inside
         Empty,
-        
-        // when it doesn't have much to go on
+
+        // when it doesn't have much left
         NearlyDepleted,
 
         // when the stocks are full

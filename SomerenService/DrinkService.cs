@@ -12,7 +12,7 @@ namespace SomerenService
     {
         private DrinkDao drinkdb;
 
-        // Create a new library based on the database
+        // Create a new instance of the library based on the database
         public DrinkService()
         {
             drinkdb = new DrinkDao();
@@ -25,7 +25,7 @@ namespace SomerenService
             return drinks;
         }
 
-        // create drinks in the database's drink table
+        // create new drinks in the database's drink table
         public void CreateDrink(Drink drink)
         {
             drinkdb.CreateDrink(drink);

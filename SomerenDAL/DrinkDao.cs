@@ -11,7 +11,6 @@ namespace SomerenDAL
 {
     public class DrinkDao : BaseDao
     {
-
         public List<Drink> GetAllDrinks()
         {
             string query = "SELECT [drinkID], [name], [alcoholic], [price], [stock] FROM drink";
@@ -19,7 +18,7 @@ namespace SomerenDAL
             return ReadTables(ExecuteSelectQuery(query, sqlParameters));
         }
 
-        // method for reading from the table
+        // method for reading from the table in the database
         private List<Drink> ReadTables(DataTable dataTable)
         {
             List<Drink> drinks = new List<Drink>();
@@ -31,7 +30,7 @@ namespace SomerenDAL
         }
 
         // method for creating each drink
-        private void CreateDrinkFromTable (DataTable dataTable, List<Drink> drinks)
+        private void CreateDrinkFromTable(DataTable dataTable, List<Drink> drinks)
         {
             foreach (DataRow dr in dataTable.Rows)
             {
@@ -48,7 +47,7 @@ namespace SomerenDAL
             }
         }
 
-        // method to create drink
+        // method to create a new drink
         public void CreateDrink(Drink drink)
         {
             SqlParameter[] sqlParameters = new SqlParameter[]
@@ -62,7 +61,7 @@ namespace SomerenDAL
             ExecuteEditQuery("INSERT INTO [drink] VALUES (@name, @alcoholic, @stock, @price); SELECT CAST(scope_identity() AS int)", sqlParameters);
         }
 
-        //  method to update drink
+        //  method to update an existing drink
         public void UpdateDrink(Drink drink)
         {
             SqlParameter[] sqlParameters = new SqlParameter[]
@@ -77,7 +76,7 @@ namespace SomerenDAL
             ExecuteEditQuery("UPDATE [drink] SET name=@name, alcoholic=@alcoholic, price=@price, stock=@stock WHERE [drinkID] = @drinkID;", sqlParameters);
         }
 
-        // method to delete drink
+        // method to delete an existing drink
         public void DeleteDrink(Drink drink)
         {
             // since we can delete only based on drink ID no need for other parameters
