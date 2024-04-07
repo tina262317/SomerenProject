@@ -54,15 +54,25 @@ namespace SomerenDAL
             return rooms;
         }
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         private Room CreateRoomFromDataRow(DataRow dr)
         {
             return new Room()
             {
+<<<<<<< Updated upstream
                 Number = (int)dr["room number"],
                 Building = ((string)dr["building"])[0],
                 floor = (int)dr["floor"],
                 numberOfBeds = (int)dr["number of beds"],
                 type = (bool)dr["type"],
+=======
+                Number = (string)dr["room number"],
+                NumberOfBeds = (int)dr["number of beds"],
+                Type = (bool)dr["type"],
+>>>>>>> Stashed changes
             };
         }
     }

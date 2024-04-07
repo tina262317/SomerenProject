@@ -40,7 +40,7 @@ namespace SomerenDAL
                     DrinkID = (int)dr["drinkID"],
                     Name = (string)dr["name"],
                     Alcoholic = (bool)dr["alcoholic"],
-                    Price = (decimal)dr["price"],
+                    Price = (double)dr["price"],
                     Stock = (int)dr["stock"],
 
                 };
@@ -59,7 +59,7 @@ namespace SomerenDAL
                 new SqlParameter("@stock", drink.Stock)
             };
             // insert into the table while passing the parameters to it
-            ExecuteEditQuery("INSERT INTO [drink] VALUES (@name, @alcoholic, @price, @stock); SELECT CAST(scope_identity() AS int)", sqlParameters);
+            ExecuteEditQuery("INSERT INTO [drink] VALUES (@name, @alcoholic, @stock, @price); SELECT CAST(scope_identity() AS int)", sqlParameters);
         }
 
         //  method to update drink
@@ -67,13 +67,14 @@ namespace SomerenDAL
         {
             SqlParameter[] sqlParameters = new SqlParameter[]
             {
+                new SqlParameter("@drinkID", drink.DrinkID),
                 new SqlParameter("@name", drink.Name),
-                new SqlParameter("@Alcoholic", drink.Alcoholic),
+                new SqlParameter("@alcoholic", drink.Alcoholic),
                 new SqlParameter("@price", drink.Price),
                 new SqlParameter("@stock", drink.Stock)
             };
             // update the table while passing the parameters to it
-            ExecuteEditQuery("UPDATE [drink] SET (@name, @alcoholic, @price, @stock) WHERE [drinkID] = [@drinkID];", sqlParameters);
+            ExecuteEditQuery("UPDATE [drink] SET name=@name, alcoholic=@alcoholic, price=@price, stock=@stock WHERE [drinkID] = @drinkID;", sqlParameters);
         }
 
         // method to delete drink
@@ -85,7 +86,7 @@ namespace SomerenDAL
                 new SqlParameter("@drinkID", drink.DrinkID)
             };
             // delete from the table with condition of matching the drink ID
-            ExecuteEditQuery("DELETE FROM [drink] WHERE [drinkID] = [@drinkID]", sqlParameters);
+            ExecuteEditQuery("DELETE FROM [drink] WHERE [drinkID] = @drinkID", sqlParameters);
         }
     }
 }

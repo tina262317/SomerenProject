@@ -296,6 +296,7 @@
             btnDelete.TabIndex = 5;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnEdit
             // 
@@ -306,6 +307,7 @@
             btnEdit.TabIndex = 4;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnCreate
             // 
@@ -316,6 +318,7 @@
             btnCreate.TabIndex = 3;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = true;
+            btnCreate.Click += btnCreate_Click;
             // 
             // pictureBox3
             // 
@@ -329,9 +332,12 @@
             // 
             // listViewDrinks
             // 
+            listViewDrinks.AutoArrange = false;
             listViewDrinks.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { nameDrinks, typeDrinks, priceDrink, stockAmount, stockStatusDrink });
+            listViewDrinks.FullRowSelect = true;
             listViewDrinks.Location = new System.Drawing.Point(27, 84);
             listViewDrinks.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            listViewDrinks.MultiSelect = false;
             listViewDrinks.Name = "listViewDrinks";
             listViewDrinks.Size = new System.Drawing.Size(1310, 610);
             listViewDrinks.TabIndex = 1;
@@ -447,9 +453,13 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.ColumnHeader stockAmount;
+<<<<<<< Updated upstream
 =======
         private System.Windows.Forms.ColumnHeader type;
         private System.Windows.Forms.ColumnHeader size;
 >>>>>>> 9a18ff8c73e5336a830bb97c71d4a4aac82dfa3d
+=======
+
+>>>>>>> Stashed changes
     }
 }

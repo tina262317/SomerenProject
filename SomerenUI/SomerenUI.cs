@@ -3,11 +3,14 @@ using SomerenModel;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System;
+using static System.Windows.Forms.LinkLabel;
 
 namespace SomerenUI
 {
     public partial class SomerenUI : Form
     {
+        // drink service 
+        DrinkService drinkService = new DrinkService();
         public SomerenUI()
         {
             InitializeComponent();
@@ -36,7 +39,7 @@ namespace SomerenUI
         private void ShowStudentsPanel()
         {
             ShowPanel(pnlStudents);
-            
+
             try
             {
                 // get and display all students
@@ -95,6 +98,8 @@ namespace SomerenUI
         // get all rooms
         private List<Room> GetRooms()
         {
+            // *room service by pitbull starts playing*
+            // no but seriously you have to initialize the room service so it gets all the methods related to rooms and whatnot
             RoomService roomService = new RoomService();
             List<Room> rooms = roomService.GetRooms();
             return rooms;
@@ -108,7 +113,11 @@ namespace SomerenUI
 
             foreach (Room room in rooms)
             {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+
+>>>>>>> Stashed changes
                 string type = room.Type ? "Lecturer" : "Student";
                 ListViewItem li = new ListViewItem(room.Number);
                 li.SubItems.Add(room.NumberOfBeds.ToString());
@@ -149,7 +158,7 @@ namespace SomerenUI
         // get all drinks
         private List<Drink> GetDrinks()
         {
-            DrinkService drinkService = new DrinkService();
+
             List<Drink> drinks = drinkService.GetDrinks();
             return drinks;
         }
@@ -179,6 +188,31 @@ namespace SomerenUI
             }
         }
 
+        // click button event to open a form to create a drink
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            CreateDrinkForm createDrinkForm = new CreateDrinkForm();
+            createDrinkForm.ShowDialog();
+            ShowDrinksPanel();
+        }
+
+        // click button event to just delete existence 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Drink drink = (Drink)listViewDrinks.SelectedItems[0].Tag;
+            drinkService.DeleteDrink(drink);
+            ShowDrinksPanel();
+        }
+
+        // click button event to edit one drink
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Drink drink = (Drink)listViewDrinks.SelectedItems[0].Tag;
+            CreateDrinkForm createDrinkForm = new CreateDrinkForm(drink);
+            createDrinkForm.ShowDialog();
+            ShowDrinksPanel();
+
+        }
 
         // The clicl events for the menu
         private void dashboardToolStripMenuItem1_Click(object sender, System.EventArgs e)
@@ -207,9 +241,13 @@ namespace SomerenUI
             ShowDrinksPanel();
         }
 
+<<<<<<< Updated upstream
 
 =======
         
 >>>>>>> 9a18ff8c73e5336a830bb97c71d4a4aac82dfa3d
+=======
+        
+>>>>>>> Stashed changes
     }
 }

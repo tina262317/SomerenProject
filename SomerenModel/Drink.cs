@@ -11,7 +11,7 @@ namespace SomerenModel
         public int DrinkID { get; set; }     // drink ID, e.g. 5
         public string Name { get; set; }   // Name, e.g. Beer
         public bool Alcoholic { get; set; }      // Alcoholic, either alcholoic or non-alcoholic
-        public decimal Price { get; set; }      // Price, e.g. 2.00 euros
+        public double Price { get; set; }      // Price, e.g. 2.00 euros
 
         public int Stock { get; set; } // Stock, e.g. 100
 
