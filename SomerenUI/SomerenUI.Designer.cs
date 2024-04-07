@@ -63,6 +63,12 @@
             stockAmount = new System.Windows.Forms.ColumnHeader();
             stockStatusDrink = new System.Windows.Forms.ColumnHeader();
             labelDrinks = new System.Windows.Forms.Label();
+            studentNumber = new System.Windows.Forms.ColumnHeader();
+            studentRoom = new System.Windows.Forms.ColumnHeader();
+            firstName = new System.Windows.Forms.ColumnHeader();
+            lastName = new System.Windows.Forms.ColumnHeader();
+            telephone = new System.Windows.Forms.ColumnHeader();
+            studentClass = new System.Windows.Forms.ColumnHeader();
             menuStrip1.SuspendLayout();
             pnlDashboard.SuspendLayout();
             pnlStudents.SuspendLayout();
@@ -141,7 +147,7 @@
             // pnlDashboard
             // 
             pnlDashboard.Controls.Add(lblDashboard);
-            pnlDashboard.Location = new System.Drawing.Point(21, 54);
+            pnlDashboard.Location = new System.Drawing.Point(16, 42);
             pnlDashboard.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             pnlDashboard.Name = "pnlDashboard";
             pnlDashboard.Size = new System.Drawing.Size(1608, 932);
@@ -162,7 +168,7 @@
             pnlStudents.Controls.Add(pictureBox1);
             pnlStudents.Controls.Add(listViewStudents);
             pnlStudents.Controls.Add(label1);
-            pnlStudents.Location = new System.Drawing.Point(0, 0);
+            pnlStudents.Location = new System.Drawing.Point(16, 42);
             pnlStudents.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             pnlStudents.Name = "pnlStudents";
             pnlStudents.Size = new System.Drawing.Size(1608, 932);
@@ -180,6 +186,7 @@
             // 
             // listViewStudents
             // 
+            listViewStudents.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { studentNumber, studentRoom, firstName, lastName, telephone, studentClass });
             listViewStudents.Location = new System.Drawing.Point(27, 84);
             listViewStudents.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             listViewStudents.Name = "listViewStudents";
@@ -203,7 +210,7 @@
             pnlRooms.Controls.Add(pictureBox2);
             pnlRooms.Controls.Add(listViewRooms);
             pnlRooms.Controls.Add(label2);
-            pnlRooms.Location = new System.Drawing.Point(16, 48);
+            pnlRooms.Location = new System.Drawing.Point(16, 42);
             pnlRooms.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             pnlRooms.Name = "pnlRooms";
             pnlRooms.Size = new System.Drawing.Size(1608, 932);
@@ -370,6 +377,40 @@
             labelDrinks.TabIndex = 0;
             labelDrinks.Text = "Drinks";
             // 
+            // studentNumber
+            // 
+            studentNumber.Text = "Student Number";
+            studentNumber.Width = 100;
+            // 
+            // studentRoom
+            // 
+            studentRoom.Text = "Room Number";
+            studentRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            studentRoom.Width = 10;
+            // 
+            // firstName
+            // 
+            firstName.Text = "First Name";
+            firstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            firstName.Width = 80;
+            // 
+            // lastName
+            // 
+            lastName.Text = "Last Name";
+            lastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            lastName.Width = 100;
+            // 
+            // telephone
+            // 
+            telephone.Text = "Telephone";
+            telephone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            telephone.Width = 80;
+            // 
+            // studentClass
+            // 
+            studentClass.Text = "Class";
+            studentClass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // SomerenUI
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
@@ -437,5 +478,11 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.ColumnHeader stockAmount;
+        private System.Windows.Forms.ColumnHeader studentNumber;
+        private System.Windows.Forms.ColumnHeader studentRoom;
+        private System.Windows.Forms.ColumnHeader firstName;
+        private System.Windows.Forms.ColumnHeader lastName;
+        private System.Windows.Forms.ColumnHeader telephone;
+        private System.Windows.Forms.ColumnHeader studentClass;
     }
 }

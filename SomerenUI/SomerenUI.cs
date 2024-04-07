@@ -11,6 +11,10 @@ namespace SomerenUI
     {
         // drink service 
         DrinkService drinkService = new DrinkService();
+        StudentService studentService = new StudentService();
+        // *room service by pitbull starts playing*
+        // no but seriously you have to initialize the room service so it gets all the methods related to rooms and whatnot
+        RoomService roomService = new RoomService();
         public SomerenUI()
         {
             InitializeComponent();
@@ -54,7 +58,6 @@ namespace SomerenUI
 
         private List<Student> GetStudents()
         {
-            StudentService studentService = new StudentService();
             List<Student> students = studentService.GetStudents();
             return students;
         }
@@ -62,11 +65,16 @@ namespace SomerenUI
         private void DisplayStudents(List<Student> students)
         {
             // clear the listview before filling it
-            listViewStudents.Clear();
+            listViewStudents.Items.Clear();
 
             foreach (Student student in students)
             {
-                ListViewItem li = new ListViewItem(student.Name);
+                ListViewItem li = new ListViewItem(student.StudentNumber.ToString());
+                li.SubItems.Add(student.RoomNumber);
+                li.SubItems.Add(student.FirstName);
+                li.SubItems.Add(student.LastName);
+                li.SubItems.Add(student.Telephone.ToString());
+                li.SubItems.Add(student.Class);
                 li.Tag = student;   // link student object to listview item
                 listViewStudents.Items.Add(li);
             }
@@ -98,9 +106,7 @@ namespace SomerenUI
         // get all rooms
         private List<Room> GetRooms()
         {
-            // *room service by pitbull starts playing*
-            // no but seriously you have to initialize the room service so it gets all the methods related to rooms and whatnot
-            RoomService roomService = new RoomService();
+            
             List<Room> rooms = roomService.GetRooms();
             return rooms;
         }
