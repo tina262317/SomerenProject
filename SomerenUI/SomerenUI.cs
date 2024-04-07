@@ -275,7 +275,7 @@ namespace SomerenUI
             try
             {
                 // only open the edit form if an item is chosen
-                if (listViewStudents.SelectedItems.Count > 0)
+                if (listViewDrinks.SelectedItems.Count > 0)
                 {
                     // get the chosen drink and pass it to the edit form
                     Drink drink = (Drink)listViewDrinks.SelectedItems[0].Tag;
@@ -303,7 +303,7 @@ namespace SomerenUI
             try
             {
                 // only delete if an item is chosen
-                if (listViewStudents.SelectedItems.Count > 0)
+                if (listViewDrinks.SelectedItems.Count > 0)
                 {
                     // get the chosen drink and delete it
                     Drink drink = (Drink)listViewDrinks.SelectedItems[0].Tag;
