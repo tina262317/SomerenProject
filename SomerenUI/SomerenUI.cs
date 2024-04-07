@@ -4,17 +4,21 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System;
 using static System.Windows.Forms.LinkLabel;
+using Microsoft.VisualBasic;
+using System.Data.Common;
 
 namespace SomerenUI
 {
     public partial class SomerenUI : Form
     {
-        // drink service 
+        // drink and student service as global variables
         DrinkService drinkService = new DrinkService();
         StudentService studentService = new StudentService();
+
         // *room service by pitbull starts playing*
         // no but seriously you have to initialize the room service so it gets all the methods related to rooms and whatnot
         RoomService roomService = new RoomService();
+
         public SomerenUI()
         {
             InitializeComponent();
@@ -34,16 +38,19 @@ namespace SomerenUI
             panel.Show();
         }
 
-
+        // Method to show the dashboard
         private void ShowDashboardPanel()
         {
             ShowPanel(pnlDashboard);
         }
 
+        // method to show the students
         private void ShowStudentsPanel()
         {
+            // show the students panel and hide everything else
             ShowPanel(pnlStudents);
 
+            // error handling done for the server
             try
             {
                 // get and display all students
@@ -56,17 +63,20 @@ namespace SomerenUI
             }
         }
 
+        // method gets all students from the student service
         private List<Student> GetStudents()
         {
             List<Student> students = studentService.GetStudents();
             return students;
         }
 
+        // method displays all students in the panel
         private void DisplayStudents(List<Student> students)
         {
             // clear the listview before filling it
             listViewStudents.Items.Clear();
 
+            // fill each column with information recieved 
             foreach (Student student in students)
             {
                 ListViewItem li = new ListViewItem(student.StudentNumber.ToString());
@@ -80,6 +90,78 @@ namespace SomerenUI
             }
         }
 
+        // method opens the form for creating a new student if the add button is clicked
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddEditStudentForm addStudentForm = new AddEditStudentForm();
+            addStudentForm.ShowDialog();
+
+            // refresh the students panel so new information shows up
+            ShowStudentsPanel();
+        }
+
+        // method opens the edit form if the edit button is clicked
+        private void btnEditStudent_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // only open the edit form if an item is chosen
+                if (listViewStudents.SelectedItems.Count > 0)
+                {
+                    // get the chosen student and pass it to the edit form
+                    Student student = (Student)listViewStudents.SelectedItems[0].Tag;
+                    AddEditStudentForm editStudentForm = new AddEditStudentForm(student);
+                    editStudentForm.ShowDialog();
+
+                    // refresh the students panel so new information shows up
+                    ShowStudentsPanel();
+                }
+                // if no item is selected throw an error
+                else
+                {
+                    throw new Exception("You need to select a student!");
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+        }
+
+
+        // method deletes a chosen student if the delete button is clicked
+        private void btnDeleteStudent_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // first check if any item is selected or not
+                if (listViewStudents.SelectedItems.Count > 0)
+                {
+                    // add a message box to get confirmation for deleting the student
+                    string messageTop = "Confirmation needed";
+                    string messageText = "Are you sure you wish to remove this student?";
+                    DialogResult result = MessageBox.Show(messageText, messageTop, MessageBoxButtons.YesNo);
+
+                    // if the user says yes then delete the student
+                    if (result == DialogResult.Yes)
+                    {
+                        Student student = (Student)listViewStudents.SelectedItems[0].Tag;
+                        studentService.DeleteStudent(student);
+                        ShowStudentsPanel();
+                    }
+                }
+                // if no student is selected then throw an error
+                else
+                {
+                    throw new Exception("You need to select a student!");
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+        }
+
 
         // show the rooms panel 
         private void ShowRoomsPanel()
@@ -87,9 +169,7 @@ namespace SomerenUI
             // hide all other panels
             ShowPanel(pnlRooms);
 
-            // show rooms panel
-            pnlRooms.Show();
-
+            // error handling for the server
             try
             {
                 // get and display all rooms
@@ -106,7 +186,6 @@ namespace SomerenUI
         // get all rooms
         private List<Room> GetRooms()
         {
-            
             List<Room> rooms = roomService.GetRooms();
             return rooms;
         }
@@ -117,10 +196,12 @@ namespace SomerenUI
             // clear the listview before filling it
             listViewRooms.Items.Clear();
 
+            // fill each column with information recieved 
             foreach (Room room in rooms)
             {
-
+                // type is a bool so a string based on the result of type
                 string type = room.Type ? "Lecturer" : "Student";
+
                 ListViewItem li = new ListViewItem(room.Number);
                 li.SubItems.Add(room.NumberOfBeds.ToString());
                 li.SubItems.Add(type);
@@ -135,9 +216,7 @@ namespace SomerenUI
             // hide all other panels
             ShowPanel(pnlDrinks);
 
-            // show rooms panel
-            pnlDrinks.Show();
-
+            // error handling for the server
             try
             {
                 // get and display all rooms
@@ -164,14 +243,12 @@ namespace SomerenUI
             // clear the listview before filling it
             listViewDrinks.Items.Clear();
 
+            //fill each column with information recieved
             foreach (Drink drink in drinks)
             {
-
-
-                //"Are you an alcoholic? Be honest to me" question for the drink, not for you
+                //"Are you an alcoholic? Be honest to me" question for the drink, not for the user
                 // sorry for the bad jokes, my sense of humour gets broken after a few hours of coding
                 string alcoholic = drink.Alcoholic ? "Yes" : "No";
-
 
                 ListViewItem li = new ListViewItem(drink.Name);
                 li.SubItems.Add(alcoholic);
@@ -183,6 +260,7 @@ namespace SomerenUI
             }
         }
 
+
         // click button event to open a form to create a drink
         private void btnCreate_Click(object sender, EventArgs e)
         {
@@ -191,25 +269,61 @@ namespace SomerenUI
             ShowDrinksPanel();
         }
 
-        // click button event to just delete existence 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            Drink drink = (Drink)listViewDrinks.SelectedItems[0].Tag;
-            drinkService.DeleteDrink(drink);
-            ShowDrinksPanel();
-        }
-
         // click button event to edit one drink
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            Drink drink = (Drink)listViewDrinks.SelectedItems[0].Tag;
-            CreateDrinkForm createDrinkForm = new CreateDrinkForm(drink);
-            createDrinkForm.ShowDialog();
-            ShowDrinksPanel();
+            try
+            {
+                // only open the edit form if an item is chosen
+                if (listViewStudents.SelectedItems.Count > 0)
+                {
+                    // get the chosen drink and pass it to the edit form
+                    Drink drink = (Drink)listViewDrinks.SelectedItems[0].Tag;
+                    CreateDrinkForm createDrinkForm = new CreateDrinkForm(drink);
+                    createDrinkForm.ShowDialog();
 
+                    // refresh the students panel so new information shows up
+                    ShowDrinksPanel();
+                }
+                // if no item is selected throw an error
+                else
+                {
+                    throw new Exception("You need to select a drink!");
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
 
-        // The clicl events for the menu
+        // click button event to just delete existence 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // only delete if an item is chosen
+                if (listViewStudents.SelectedItems.Count > 0)
+                {
+                    // get the chosen drink and delete it
+                    Drink drink = (Drink)listViewDrinks.SelectedItems[0].Tag;
+                    drinkService.DeleteDrink(drink);
+                    ShowDrinksPanel();
+                }
+                // if no item is selected throw an error
+                else
+                {
+                    throw new Exception("You need to select a drink!");
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+        }
+
+
+        // The click events for the menu
         private void dashboardToolStripMenuItem1_Click(object sender, System.EventArgs e)
         {
             ShowDashboardPanel();

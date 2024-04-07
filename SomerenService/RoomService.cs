@@ -13,6 +13,7 @@ namespace SomerenService
             accomodationdb = new RoomsDao();
         }
 
+        // make a list of all rooms 
         public List<Room> GetRooms()
         {
             List<Room> rooms = accomodationdb.GetAllRooms();

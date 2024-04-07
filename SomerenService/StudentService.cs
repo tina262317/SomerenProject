@@ -18,7 +18,7 @@ namespace SomerenService
             List<Student> students = studentdb.GetAllStudents();
             return students;
         }
-        
+
 
         // add new students in the database's student table
         public void AddStudent(Student student)

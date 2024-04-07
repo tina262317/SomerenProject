@@ -24,7 +24,7 @@ namespace SomerenModel
                 {
                     case 0:
                         return StockStatus.Empty;
-                        
+
 
                     case <= 10:
                         return StockStatus.NearlyDepleted;
@@ -34,7 +34,7 @@ namespace SomerenModel
                         return StockStatus.Full;
                 }
             }
-            
+
         }
     }
 }

@@ -18,27 +18,37 @@ namespace SomerenUI
         // intialize the drink service
         DrinkService drinkService = new DrinkService();
 
-        // global variable for a drink
+        // global variable for the current drink for editing an existing drink
         Drink currentDrink = new Drink();
 
-        // make sure it's a create form
+        // for the create new drink form
         public CreateDrinkForm()
         {
             InitializeComponent();
+
+            // set the text above the form to create drink
             Text = "Create drink";
+
+            // hide the update drink button
             btnUpdate.Hide();
         }
 
-        // make sure it's an edit form
+        // for the edit existing drink form
         public CreateDrinkForm(Drink drink)
         {
             InitializeComponent();
+
+            // set the text above the form to edit drink
             Text = "Edit drink";
+
+            // hide the create drink button
             btnCreate.Hide();
+            // pass the chosen drink to global variable current drink and fill the textboxes with already available data
             currentDrink = drink;
             FillTexbox();
         }
 
+        // create a new drink when the create button is clicked
         private void btnCreate_Click(object sender, EventArgs e)
         {
             try
@@ -65,15 +75,15 @@ namespace SomerenUI
             Drink drink = new Drink();
             drink.Name = TextBoxEmpty(textBoxName.Text, "So close! That's not a name.");
             drink.Alcoholic = rdoYes.Checked;
-            drink.Price = TextBoxParseDecimal(textBoxPrice.Text, "So close! That's not a price.");
-            drink.Stock = TextBoxParseInt(textBoxStock.Text, "So close! That's not a number for stock.");
+            drink.Price = TextBoxParseDecimal(textBoxPrice.Text, "So close! That's not a valid price.");
+            drink.Stock = TextBoxParseInt(textBoxStock.Text, "So close! That's not a valid stock amount.");
             return drink;
         }
 
         //  a method to make sure the textbox is not empty, if yes then throw an exception
         private string TextBoxEmpty(string textboxString, string errorMessage)
         {
-            if (textBoxName.Text == null || textBoxName.Text == string.Empty)
+            if (textboxString == null || textboxString == string.Empty)
                 throw new Exception(errorMessage);
 
             return textboxString;
@@ -102,7 +112,6 @@ namespace SomerenUI
         // method to edit drink 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-      
             try
             {
                 Drink drink = CreateDrink();
@@ -122,12 +131,11 @@ namespace SomerenUI
             textBoxName.Text = currentDrink.Name;
             textBoxPrice.Text = currentDrink.Price.ToString();
             textBoxStock.Text = currentDrink.Stock.ToString();
-            // radio button to whatever that was
+            // radio button to whatever was chosen
             if (currentDrink.Alcoholic)
                 rdoYes.Checked = true;
             else
                 rdoNo.Checked = true;
         }
-
     }
 }
